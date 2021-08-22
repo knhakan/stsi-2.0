@@ -1,0 +1,138 @@
+.card {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  border: 1px solid white;
+  border-radius: 16px;
+  padding: 2rem;
+  background: white;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-image {
+  width: 30%;
+  max-height: 100px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.card-name {
+  margin: 0;
+}
+
+.card-location {
+  color: #b3b3b3;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-message-btn {
+  font-size: 2rem;
+  color: #cd0c36;
+  padding-right: 1rem;
+}
+
+.card-message:hover {
+  cursor: pointer;
+}
+
+.card-assign {
+  border: 1px solid #cd0c36;
+  color: #cd0c36;
+  padding: 0.5rem 1rem;
+  border-radius: 64px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-assign:hover {
+  background: #cd0c36;
+  color: white;
+  cursor: pointer;
+}
+
+.selected-card {
+  border: 2px solid #cd0c36;
+}
+
+@media only screen and (max-width: 1920px) {
+  .card {
+    width: 65%;
+  }
+
+  .card-message-btn {
+    font-size: 1.8rem;
+  }
+
+  .card-assign {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .card-name {
+    font-size: 1.2rem;
+  }
+
+  .card-location {
+    font-size: 0.8rem;
+  }
+
+  .card-image {
+    width: 25%;
+    max-height: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .card-message-btn {
+    font-size: 1.5rem;
+  }
+
+  .card-assign {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .card-name {
+    font-size: 1.6rem;
+  }
+
+  .card-location {
+    font-size: 0.8rem;
+  }
+
+  .card-info {
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .card {
+    width: 80%;
+  }
+}

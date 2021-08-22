@@ -1,0 +1,37 @@
+body {
+  background: #f4f5f5;
+}
+
+.container {
+  display: flex;
+  border-bottom: 4px solid #e6e7e6;
+}
+
+* {
+  font-family: "Urbanist", sans-serif;
+}
+
+.hamburger {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #cd0c36;
+  display: none;
+}
+.hamburger i {
+  z-index: 10;
+  color: white;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
